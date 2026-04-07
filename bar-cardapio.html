@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Confira o cardápio completo do bar do Balneário Jóia: pratos, porções, bebidas e tabela de preços.">
+<meta property="og:title" content="Bar & Cardápio — Menu e Preços | Balneário Jóia">
+<meta property="og:description" content="Confira o cardápio completo do bar do Balneário Jóia: pratos, porções, bebidas e tabela de preços.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="img-sauna-seca-terracota.jpg">
+<meta property="og:site_name" content="Balneário Jóia">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bar & Cardápio — Menu e Preços | Balneário Jóia">
+<meta name="twitter:description" content="Confira o cardápio completo do bar do Balneário Jóia: pratos, porções, bebidas e tabela de preços.">
+<meta name="theme-color" content="#B5593A">
+<meta name="keywords" content="sauna masculina São Paulo, balneário Mooca, sauna familiar SP, sauna zona leste, bem-estar São Paulo">
+<title>Bar & Cardápio — Menu e Preços | Balneário Jóia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div id="page-loader" class="loader-consumo" role="status" aria-label="Carregando Bar e Cardápio">
+  <div class="ldr-inner">
+    <p class="ldr-brand">Balneário Jóia</p>
+    <div class="ldr-vline" aria-hidden="true"></div>
+    <div class="ldr-section-wrap">
+      <h1 class="ldr-section">Bar &amp; Cardápio</h1>
+      <div class="ldr-draw-line" aria-hidden="true"></div>
+    </div>
+    <div class="ldr-vline" aria-hidden="true"></div>
+    <p class="ldr-location">Mooca, São Paulo</p>
+  </div>
+  <div class="ldr-progress" aria-hidden="true">
+    <div class="ldr-dots">
+      <div class="ldr-dot"></div>
+      <div class="ldr-dot"></div>
+      <div class="ldr-dot"></div>
+      <div class="ldr-dot"></div>
+      <div class="ldr-dot"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+  <button class="mobile-close" onclick="closeMobile()" aria-label="Fechar menu">✕</button>
+  <a href="index.html" onclick="closeMobile()">Início</a>
+  <a href="experiencia.html" onclick="closeMobile()">A Experiência</a>
+  <a href="bar-cardapio.html" style="opacity:0.5;pointer-events:none;" onclick="closeMobile()">Bar &amp; Cardápio</a>
+  <a href="visitar.html" onclick="closeMobile()">Visitar</a>
+  <a href="bar-cardapio.html#precos" onclick="closeMobile()">Preços</a>
+  <a href="visitar.html#horarios" onclick="closeMobile()">Contato</a>
+  <a href="https://wa.me/551126010545" style="color: #25D366;" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+
+<!-- SCROLL PROGRESS BAR -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">Balneário Jóia</a>
+  <ul class="nav-links">
+    <li><a href="experiencia.html">A Experiência</a></li>
+    <li><a href="bar-cardapio.html" class="nav-current">Bar &amp; Cardápio</a></li>
+    <li><a href="visitar.html">Visitar</a></li>
+    <li><a href="bar-cardapio.html#precos">Preços</a></li>
+    <li><a href="visitar.html#horarios">Contato</a></li>
+  </ul>
+  <a href="https://www.instagram.com/balneariojoia/" class="nav-ig" target="_blank" rel="noopener" aria-label="Instagram do Balneário Jóia">
+    <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;display:block;" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.337 3.608 1.311.975.975 1.249 2.242 1.311 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.337 2.633-1.311 3.608-.975.975-2.242 1.249-3.608 1.311-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.337-3.608-1.311-.975-.975-1.249-2.242-1.311-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.337-2.633 1.311-3.608.975-.975 2.242-1.249 3.608-1.311C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038.059-1.28.072-1.689.072-4.948s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+  </a>
+  <a href="https://wa.me/551126010545" class="nav-cta" target="_blank" rel="noopener">Entrar em contato</a>
+  <button class="nav-hamburger" onclick="openMobile()" aria-label="Abrir menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+
+<!-- CABEÇALHO DA PÁGINA -->
+<div class="page-banner">
+  <a href="index.html" class="page-banner-back">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/></svg>
+    ← Voltar ao início
+  </a>
+  <p class="page-banner-label">Balneário Jóia</p>
+  <h1 class="page-banner-title">Bar &amp; <em>Cardápio</em></h1>
+  <p class="page-banner-sub">Nossa área de alimentação, bebidas e tabela de preços</p>
+</div>
+
+
+<!-- BAR & LAZER -->
+<section id="bar" class="bar-lazer">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label" style="color: var(--stone);">Bar & Lazer</span>
+      <h2 class="section-title">Porque relaxar não termina na <em>sauna</em></h2>
+      <div class="divider"></div>
+      <p class="section-body">Depois das saunas, aproveite nossa área de alimentação com pratos e bebidas de excelente qualidade, Wi-Fi gratuito, sala de TV e amplo salão de repouso.</p>
+    </div>
+    <div class="bar-features">
+      <div class="bar-feature reveal reveal-delay-1">
+        <div class="bar-feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513m-6-7.135a2.25 2.25 0 012.25 2.25v1.125a2.25 2.25 0 01-2.25 2.25A2.25 2.25 0 019.75 9.75V8.625A2.25 2.25 0 0112 6.375zM12 3v.75m0 16.5v.75M3 12h.75m16.5 0H21M5.636 5.636l.53.53m11.668 11.668l.53.53M5.636 18.364l.53-.53m11.668-11.668l.53-.53"/></svg>
+        </div>
+        <div class="bar-feature-title">Área de Alimentação</div>
+        <div class="bar-feature-desc">Pratos, porções, sucos naturais e bebidas de excelente qualidade para repor a energia após a sauna.</div>
+      </div>
+      <div class="bar-feature reveal reveal-delay-2">
+        <div class="bar-feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z"/></svg>
+        </div>
+        <div class="bar-feature-title">Wi-Fi Gratuito</div>
+        <div class="bar-feature-desc">Conecte-se ou desconecte-se. Internet de alta velocidade disponível em todo o espaço do balneário.</div>
+      </div>
+      <div class="bar-feature reveal reveal-delay-3">
+        <div class="bar-feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"/></svg>
+        </div>
+        <div class="bar-feature-title">Sala de TV</div>
+        <div class="bar-feature-desc">Assista seus programas favoritos em ambiente confortável enquanto aguarda ou simplesmente relaxa.</div>
+      </div>
+      <div class="bar-feature reveal reveal-delay-4">
+        <div class="bar-feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+        </div>
+        <div class="bar-feature-title">Salão de Repouso</div>
+        <div class="bar-feature-desc">Área silenciosa e confortável para o descanso completo após os banhos e tratamentos.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- MARQUEE STRIP -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Sauna Seca</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Sauna a Vapor</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Sauna Finlandesa</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Massagem Terapêutica</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Barbearia</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Podologia</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Piscina Aquecida</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Salão de Repouso</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Bar & Lazer</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Estética Masculina</span><span class="marquee-sep">◆</span>
+    <!-- duplicate for seamless loop -->
+    <span class="marquee-item">Sauna Seca</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Sauna a Vapor</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Sauna Finlandesa</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Massagem Terapêutica</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Barbearia</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Podologia</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Piscina Aquecida</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Salão de Repouso</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Bar & Lazer</span><span class="marquee-sep">◆</span>
+    <span class="marquee-item">Estética Masculina</span><span class="marquee-sep">◆</span>
+  </div>
+</div>
+
+
+<!-- CARDÁPIO -->
+<section class="cardapio">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Cardápio</span>
+      <h2 class="section-title">O que servimos <em>no bar</em></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="cardapio-wrap reveal">
+      <div class="tabs-nav-wrap">
+        <div class="tabs-nav" id="tabsNav">
+          <button class="tab-btn active" data-tab="buffet"><img src="img-buffet-cor.png" alt="Buffet" loading="lazy"><span>Buffet</span></button>
+          <button class="tab-btn" data-tab="porcoes"><img src="img-porcoes-cor.png" alt="Porções" loading="lazy"><span>Porções</span></button>
+          <button class="tab-btn" data-tab="peixes"><img src="img-peixes-cor.png" alt="Peixes" loading="lazy"><span>Peixes</span></button>
+          <button class="tab-btn" data-tab="pratos"><img src="img-pratos-cor.png" alt="Pratos" loading="lazy"><span>Pratos</span></button>
+          <button class="tab-btn" data-tab="massas"><img src="img-massas-cor.png" alt="Massas" loading="lazy"><span>Massas</span></button>
+          <button class="tab-btn" data-tab="sopas"><img src="img-sopas-cor.png" alt="Sopas" loading="lazy"><span>Sopas</span></button>
+          <button class="tab-btn" data-tab="lanches"><img src="img-lanches-cor.png" alt="Lanches" loading="lazy"><span>Lanches</span></button>
+          <button class="tab-btn" data-tab="cervejas"><img src="img-cervejas-cor.png" alt="Cervejas" loading="lazy"><span>Cervejas</span></button>
+          <button class="tab-btn" data-tab="caipirinhas"><img src="img-caipirinha-cor.png" alt="Caipirinhas" loading="lazy"><span>Caipirinhas</span></button>
+          <button class="tab-btn" data-tab="conhaques"><img src="img-conhaques-cor.png" alt="Conhaques" loading="lazy"><span>Conhaques</span></button>
+          <button class="tab-btn" data-tab="cachacas"><img src="img-cachacas-cor.png" alt="Cachaças" loading="lazy"><span>Cachaças</span></button>
+          <button class="tab-btn" data-tab="diversos"><img src="img-diversos-cor.png" alt="Diversos" loading="lazy"><span>Diversos</span></button>
+        </div>
+      </div>
+
+      <div class="tab-panel active" id="tab-buffet">
+        <div class="menu-grid">
+          <div class="menu-item">Salada de Atum</div>
+          <div class="menu-item">Buffet Frios e Saladas</div>
+          <div class="menu-item">Buffet Legumes</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-porcoes">
+        <div class="menu-grid">
+          <div class="menu-item">Batata Frita</div>
+          <div class="menu-item">Calabresa</div>
+          <div class="menu-item">Picanha</div>
+          <div class="menu-item">Filet Mignon</div>
+          <div class="menu-item">Frango à Passarinho</div>
+          <div class="menu-item">Nuggets</div>
+          <div class="menu-item">Filet de Frango</div>
+          <div class="menu-item">Pastel (Carne / Queijo / Palmito)</div>
+          <div class="menu-item">Omelete</div>
+          <div class="menu-item">Arroz</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-peixes">
+        <div class="menu-grid">
+          <div class="menu-item">Isca de Peixe (Cação)</div>
+          <div class="menu-item">Porquinho</div>
+          <div class="menu-item">Manjuba</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-pratos">
+        <div class="menu-grid">
+          <div class="menu-item">Picanha</div>
+          <div class="menu-item">Filet Mignon</div>
+          <div class="menu-item">Filet de Frango</div>
+          <div class="menu-item">Filet de Peixe</div>
+          <div class="menu-item">Arroz de Braga</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-massas">
+        <div class="menu-grid">
+          <div class="menu-item">Espaguete Alho e Óleo</div>
+          <div class="menu-item">Espaguete ao Sugo</div>
+          <div class="menu-item">Espaguete à Bolonhesa</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-sopas">
+        <div class="menu-grid">
+          <div class="menu-item">Caldo Verde</div>
+          <div class="menu-item">Caldo de Mocotó</div>
+          <div class="menu-item">Caldo de Feijão</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-lanches">
+        <div class="menu-grid">
+          <div class="menu-item">Misto</div>
+          <div class="menu-item">Bauru</div>
+          <div class="menu-item">Americano</div>
+          <div class="menu-item">Churrasco</div>
+          <div class="menu-item">Calabresa</div>
+          <div class="menu-item">X Churrasco</div>
+          <div class="menu-item">X Calabresa</div>
+          <div class="menu-item">Hamburguer</div>
+          <div class="menu-item">X Burguer</div>
+          <div class="menu-item">X Bacon</div>
+          <div class="menu-item">X Salada</div>
+          <div class="menu-item">X Tudo</div>
+          <div class="menu-item">Filet de Frango</div>
+          <div class="menu-item">Mortadela</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-cervejas">
+        <div class="menu-grid">
+          <div class="menu-item">Antártica</div>
+          <div class="menu-item">Brahma</div>
+          <div class="menu-item">Itaipava</div>
+          <div class="menu-item">Bohemia</div>
+          <div class="menu-item">Serra Malte</div>
+          <div class="menu-item">Original</div>
+          <div class="menu-item">1/2 Bohemia</div>
+          <div class="menu-item">1/2 Cerveja</div>
+          <div class="menu-item">Munich</div>
+          <div class="menu-item">Xingu</div>
+          <div class="menu-item">Nortenha</div>
+          <div class="menu-item">Sem álcool</div>
+          <div class="menu-item">Malzebier</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-caipirinhas">
+        <div class="menu-grid">
+          <div class="menu-item">Caipirinha</div>
+          <div class="menu-item">Caipirinha Dupla</div>
+          <div class="menu-item">Caipiríssima</div>
+          <div class="menu-item">Caipiríssima Dupla</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-conhaques">
+        <div class="menu-grid">
+          <div class="menu-item">São João Barra</div>
+          <div class="menu-item">Dreher</div>
+          <div class="menu-item">Domeq</div>
+          <div class="menu-item">Macieira</div>
+          <div class="menu-item">Fundador</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-cachacas">
+        <div class="menu-grid">
+          <div class="menu-item">51</div>
+          <div class="menu-item">Velho Barreiro</div>
+          <div class="menu-item">Ypioca</div>
+          <div class="menu-item">São Francisco</div>
+          <div class="menu-item">Solar</div>
+          <div class="menu-item">3 Coroneis</div>
+          <div class="menu-item">Boazinha</div>
+          <div class="menu-item">Seleta</div>
+          <div class="menu-item">Espírito de Minas</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-diversos">
+        <div class="menu-grid">
+          <div class="menu-item">Amendoim / Castanha / Tremoço / Torresmo</div>
+          <div class="menu-item">Alheira (unid.) / Calabresa (ped.) / Pão de Alho</div>
+          <div class="menu-item">Kibe (unid.) / Coxinha / Café Expresso</div>
+          <div class="menu-item">Água / Refrigerante / Sucos Del Valle / Iced Tea</div>
+          <div class="menu-item">Energético / Gatorade / Água de Coco / Kero Coco / Guaraviton / Taffman E</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PREÇOS -->
+<section id="precos">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Valores</span>
+      <h2 class="section-title">Preços <em>transparentes</em></h2>
+      <div class="divider"></div>
+      <p class="section-body">Sem surpresas. Consulte nossa tabela de valores ou entre em contato para pacotes especiais e grupos.</p>
+    </div>
+    <div class="precos-grid">
+      <div class="preco-card reveal reveal-delay-1">
+        <div class="preco-plano">Entrada</div>
+        <div class="preco-valor"><span>R$</span>XX</div>
+        <div class="preco-periodo">por pessoa · dia de semana</div>
+        <div class="preco-divider"></div>
+        <ul class="preco-items">
+          <li>Acesso às saunas</li>
+          <li>Vestiário e chuveiros</li>
+          <li>Área de descanso</li>
+          <li>Toalha incluída</li>
+        </ul>
+        <a href="https://wa.me/551126010545" class="preco-cta" target="_blank" rel="noopener">Saber mais</a>
+      </div>
+      <div class="preco-card destaque reveal reveal-delay-2">
+        <div class="preco-tag-best">Mais popular</div>
+        <div class="preco-plano">Pacote Completo</div>
+        <div class="preco-valor"><span>R$</span>XX</div>
+        <div class="preco-periodo">por pessoa · inclui massagem</div>
+        <div class="preco-divider"></div>
+        <ul class="preco-items">
+          <li>Tudo da entrada</li>
+          <li>Massagem relaxante 40min</li>
+          <li>1 consumação no bar</li>
+          <li>Vassoura de eucalipto</li>
+        </ul>
+        <a href="https://wa.me/551126010545" class="preco-cta" target="_blank" rel="noopener">Reservar agora</a>
+      </div>
+      <div class="preco-card reveal reveal-delay-3">
+        <div class="preco-plano">Pacote Premium</div>
+        <div class="preco-valor"><span>R$</span>XX</div>
+        <div class="preco-periodo">por pessoa · fins de semana</div>
+        <div class="preco-divider"></div>
+        <ul class="preco-items">
+          <li>Tudo da entrada</li>
+          <li>Massagem relaxante 60min</li>
+          <li>Barba ou serviço de estética</li>
+          <li>2 consumações no bar</li>
+          <li>Reserva com hora marcada</li>
+        </ul>
+        <a href="https://wa.me/551126010545" class="preco-cta" target="_blank" rel="noopener">Reservar agora</a>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 1.5rem; font-size: 0.8rem; color: var(--muted);">
+      * Valores sujeitos a alteração. Entre em contato para confirmar preços atualizados e promoções.
+    </p>
+  </div>
+</section>
+
+
+<!-- CONTADOR DE PROVA SOCIAL -->
+<div class="contador-strip reveal">
+  <div class="container">
+    <div class="contador-grid">
+      <div class="contador-item">
+        <span class="contador-num" data-target="20">0</span>
+        <span class="contador-label">Anos de tradição</span>
+      </div>
+      <div class="contador-item">
+        <span class="contador-num" data-target="15000">0</span>
+        <span class="contador-label">Clientes atendidos</span>
+      </div>
+      <div class="contador-item">
+        <span class="contador-num" data-suffix="★" data-target="4.8" data-float="true">0</span>
+        <span class="contador-label">Avaliação no Google</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- NAVEGAÇÃO ENTRE PÁGINAS -->
+<div class="between-pages-nav">
+  <span class="between-pages-label">Explore outras áreas</span>
+  <div class="between-pages-btns">
+    <a href="experiencia.html" class="between-page-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"/></svg> A Experiência</a>
+    <a href="visitar.html" class="between-page-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg> Visitar</a>
+    <a href="index.html" class="between-page-btn">← Início</a>
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Balneário Jóia</div>
+    <p class="footer-copy">
+      © 2026 Balneário Jóia · R. Marquês de Valença, 414 · Mooca, São Paulo<br>
+      CNPJ: XX.XXX.XXX/0001-XX
+    </p>
+    <ul class="footer-links">
+      <li><a href="#sobre">O Balneário</a></li>
+      <li><a href="#saunas">Saunas</a></li>
+      <li><a href="#precos">Preços</a></li>
+      <li><a href="#horarios">Contato</a></li>
+    </ul>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/balneariojoia/" target="_blank" rel="noopener" aria-label="Instagram do Balneário Jóia">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.337 3.608 1.311.975.975 1.249 2.242 1.311 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.337 2.633-1.311 3.608-.975.975-2.242 1.249-3.608 1.311-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.337-3.608-1.311-.975-.975-1.249-2.242-1.311-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.337-2.633 1.311-3.608.975-.975 2.242-1.249 3.608-1.311C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038.059-1.28.072-1.689.072-4.948s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- BOTÃO VOLTAR AO TOPO -->
+<button id="back-to-top" aria-label="Voltar ao topo da página">
+  <span id="back-to-top-label">Topo</span>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"/></svg>
+</button>
+
+
+<!-- WHATSAPP FLUTUANTE -->
+<a href="https://wa.me/551126010545" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+  <span class="whatsapp-icon">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </span>
+  Falar pelo WhatsApp
+</a>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
